@@ -1,2 +1,1 @@
-# build-php
-Building PHP for testing purposes
+# Building PHP for testing purposes
