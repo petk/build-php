@@ -1,8 +1,9 @@
-.PHONY: build
+.PHONY: run-alpine run-debian
 
-build:
-	docker build --no-cache -t build-php -f Dockerfile .
+run-alpine:
+	docker build --no-cache -t build-php/alpine -f Dockerfile .
+	docker run -it build-php/alpine sh
 
-run:
-	make build
-	docker run -it build-php sh
+run-debian:
+	docker build --no-cache -t build-php/debian -f Dockerfile-debian .
+	docker run -it build-php/debian bash
