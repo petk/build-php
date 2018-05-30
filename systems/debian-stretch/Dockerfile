@@ -1,8 +1,9 @@
 FROM debian
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
+    apt-utils \
     build-essential \
-    rec2 \
+    re2c \
     bison \
     autoconf \
     wget \

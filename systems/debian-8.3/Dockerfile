@@ -1,6 +1,7 @@
 FROM debian:8.3
 
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
+    apt-utils \
     wget \
     build-essential \
     bison \
