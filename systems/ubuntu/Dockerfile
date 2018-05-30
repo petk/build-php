@@ -1,6 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update && apt-get install -y \
+    apt-utils \
     wget \
     xz-utils \
     build-essential \
