@@ -24,4 +24,8 @@ ubuntu-16.04: ## Build and run Ubuntu 16.04
 
 ubuntu: ## Build and run latest stable Ubuntu
   docker build --no-cache -t build-php/ubuntu -f systems/ubuntu/Dockerfile systems/ubuntu
-  docker run -it --rm -v `pwd`/php-src:/opt
+  docker run -it --rm -v `pwd`/php-src:/opt/php-src build-php/ubuntu bash
+
+opensuse-13.2: ## Build and run OpenSuse 13.2
+  docker build --no-cache -t build-php/opensuse:13.2 -f systems/opensuse-13.2/Dockerfile systems/opensuse-13.2
+  docker run -it --rm -v `pwd`/php-7.1.18:/opt/php-src build-php/opensuse:13.2 bash
