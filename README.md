@@ -11,10 +11,10 @@ Run `make` to get basic usage info:
 make
 ```
 
-To run Debian:
+To run Debian Stretch:
 
 ```bash
-make run system=debian-stretch
+make debian-stretch
 ```
 
 ## License and contributing
