@@ -4,7 +4,7 @@
 
 help:
   @echo "\033[33mUsage:\033[0m\n  make [target] [arg=\"val\"...]\n\n\033[33mTargets:\033[0m"
-  @grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-15s\033[0m %s\n", $$1, $$2}'
+  @grep -E '^[a-zA-Z0-9_-./]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-15s\033[0m %s\n", $$1, $$2}'
 
 debian-8.3: ## Build and run Debian 8.3
   @docker build --no-cache -t build-php/debian:8.3 -f systems/debian-8.3/Dockerfile systems/debian-8.3
