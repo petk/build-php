@@ -5,6 +5,9 @@ RUN apt-get update && apt-get install -y \
     wget \
     xz-utils \
     build-essential \
+    autoconf \
+    re2c \
+    bison \
     libxml2-dev \
     libssl-dev \
     libpcre++-dev \
@@ -13,3 +16,5 @@ RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev \
     libdb5.3++-dev \
     libdb-dev
+
+WORKDIR /opt
