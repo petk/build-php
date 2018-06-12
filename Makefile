@@ -29,3 +29,6 @@ ubuntu: ## Build and run latest stable Ubuntu
 
 opensuse-13.2: ## Build and run OpenSuse 13.2
   make run system="$(MAKECMDGOALS)" shell=bash
+
+fedora: ## Build and run latest Fedora
+  make run system="$(MAKECMDGOALS)" shell=bash
