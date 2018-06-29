@@ -15,6 +15,20 @@ RUN apt-get update && apt-get install -y \
     libbz2-dev \
     libcurl4-openssl-dev \
     libdb5.3++-dev \
-    libdb-dev
+    libdb-dev \
+    libenchant-dev \
+    libpng-dev \
+    libgmp-dev \
+    libc-client-dev \
+    libkrb5-dev \
+    libjpeg-dev \
+    libxpm-dev \
+    libfreetype6-dev \
+    libldap2-dev \
+    unixodbc-dev \
+    libodbc1 \
+    freetds-dev \
+    libsnmp-dev \
+    snmp
 
 WORKDIR /opt
