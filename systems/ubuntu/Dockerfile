@@ -29,6 +29,8 @@ RUN apt-get update && apt-get install -y \
     libodbc1 \
     freetds-dev \
     libsnmp-dev \
-    snmp
+    snmp \
+    apache2-dev \
+    vim
 
 WORKDIR /opt
