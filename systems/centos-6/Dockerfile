@@ -6,6 +6,10 @@ RUN yum install -y \
     libmemcached-dev \
     zlib-devel \
     wget \
-    vim
+    vim \
+    xz \
+    m4 \
+    bison \
+    libxml2-devel
 
 WORKDIR /opt
