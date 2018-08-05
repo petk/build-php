@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
     bison \
     autoconf \
     wget \
+    man \
+    vim \
     && mkdir -p /opt
 
 WORKDIR /opt
