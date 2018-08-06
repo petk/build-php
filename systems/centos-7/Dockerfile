@@ -10,6 +10,9 @@ RUN yum install -y \
     xz \
     m4 \
     bison \
-    libxml2-devel
+    libxml2-devel \
+    make \
+    autoconf \
+    file
 
 WORKDIR /opt
