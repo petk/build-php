@@ -12,6 +12,9 @@ run:
   @docker build --no-cache -t build-php/$(system) -f systems/$(system)/Dockerfile systems/$(system)
   @docker run -it --rm -v `pwd`/php-src:/opt/php-src build-php/$(system) $(shell)
 
+debian-7: ## Build and run Debian 7 (wheezy)
+  make run system="$(MAKECMDGOALS)" shell=bash
+
 debian-8.3: ## Build and run Debian 8.3
   make run system="$(MAKECMDGOALS)" shell=bash
 
