@@ -1,7 +1,6 @@
 # Building PHP
 
-This is a sandbox repository with some common setups to test how the building of
-PHP works.
+Various testing systems for building PHP.
 
 ## Usage
 
@@ -11,7 +10,13 @@ Run `make` to get basic usage info:
 make
 ```
 
-To run Debian Stretch:
+First we need to build given system:
+
+```bash
+make build system=ubuntu
+```
+
+Then we can run it:
 
 ```bash
 make debian-stretch

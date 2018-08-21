@@ -6,10 +6,13 @@ help:
   @echo "\033[33mUsage:\033[0m\n  make [target] [arg=\"val\"...]\n\n\033[33mTargets:\033[0m"
   @grep -E '^[a-zA-Z0-9_-./]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-15s\033[0m %s\n", $$1, $$2}'
 
+build: ## Build image; usage: make build system={system-name}
+  @test "$(system)"
+  @docker build --no-cache -t build-php/$(system) -f systems/$(system)/Dockerfile systems/$(system)
+
 run:
   @test "$(system)"
   @test "$(shell)"
-  @docker build --no-cache -t build-php/$(system) -f systems/$(system)/Dockerfile systems/$(system)
   @docker run -it --rm -v `pwd`/php-src:/opt/php-src build-php/$(system) $(shell)
 
 debian-7: ## Build and run Debian 7 (wheezy)
