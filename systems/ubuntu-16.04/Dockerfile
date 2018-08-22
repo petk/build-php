@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install -y \
     libgdbm-dev \
     freetds-dev \
     libzip-dev \
+    firebird-dev \
     && mkdir -p /opt
 
 WORKDIR /opt

@@ -2,6 +2,7 @@ FROM ubuntu
 
 RUN apt-get update && apt-get install -y \
     apt-utils \
+    apt-file \
     wget \
     xz-utils \
     build-essential \
@@ -31,6 +32,8 @@ RUN apt-get update && apt-get install -y \
     libsnmp-dev \
     snmp \
     apache2-dev \
-    vim
+    firebird-dev \
+    vim \
+    && apt-file update
 
 WORKDIR /opt
