@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y \
     apache2-dev \
     firebird-dev \
     vim \
+    unzip \
     && apt-file update
 
 WORKDIR /opt

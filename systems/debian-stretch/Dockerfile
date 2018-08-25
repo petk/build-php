@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     man \
     vim \
+    libsystemd-dev \
     && mkdir -p /opt
 
 WORKDIR /opt

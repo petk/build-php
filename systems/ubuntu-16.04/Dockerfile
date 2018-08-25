@@ -42,6 +42,8 @@ RUN apt-get update && apt-get install -y \
     freetds-dev \
     libzip-dev \
     firebird-dev \
+    vim \
+    unzip \
     && mkdir -p /opt
 
 WORKDIR /opt
