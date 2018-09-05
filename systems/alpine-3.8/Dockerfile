@@ -18,6 +18,7 @@ RUN apk add --no-cache \
     bison \
     libxml2-dev \
     libressl-dev \
+    vim \
     && mkdir -p /opt
 
 WORKDIR /opt
