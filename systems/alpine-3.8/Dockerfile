@@ -18,6 +18,9 @@ RUN apk add --no-cache \
     bison \
     libxml2-dev \
     libressl-dev \
+    sqlite-dev \
+    libpng-dev \
+    freetype-dev \
     vim \
     && mkdir -p /opt
 
