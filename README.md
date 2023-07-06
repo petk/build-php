@@ -6,20 +6,20 @@ Various testing systems for building PHP.
 
 Run `make` to get basic usage info:
 
-```bash
+```sh
 make
 ```
 
-First we need to build given system:
+First we need to build the given system:
 
-```bash
+```sh
 make build system=ubuntu
 ```
 
 Then we can run it:
 
-```bash
-make debian-stretch
+```sh
+make ubuntu
 ```
 
 ## License and contributing
