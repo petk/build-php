@@ -1,4 +1,4 @@
-FROM fedora
+FROM fedora:latest
 
 RUN dnf -y install \
     make \
@@ -12,6 +12,8 @@ RUN dnf -y install \
     openssl \
     openssl-devel \
     wget \
-    xz
+    xz \
+    systemtap-sdt-devel \
+    sqlite-devel
 
 WORKDIR /opt
