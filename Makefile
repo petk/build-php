@@ -21,6 +21,9 @@ debian-7: ## Build and run Debian 7 (wheezy)
 debian-8.3: ## Build and run Debian 8.3
   make run system="$(MAKECMDGOALS)" shell=bash
 
+debian-bullseye: ## Build and run Debian Bullseye (11.7)
+  make run system="$(MAKECMDGOALS)" shell=bash
+
 debian-stretch: ## Build and run Debian Stretch
   make run system="$(MAKECMDGOALS)" shell=bash
 
@@ -31,6 +34,9 @@ alpine-3.8: ## Build and run Alpine Linux v3.8
   make run system="$(MAKECMDGOALS)" shell=sh
 
 alpine-3.18: ## Build and run Alpine Linux v3.18
+  make run system="$(MAKECMDGOALS)" shell=sh
+
+alpine-edge: ## Build and run edge Alpine Linux
   make run system="$(MAKECMDGOALS)" shell=sh
 
 ubuntu-14.04:
