@@ -54,6 +54,9 @@ opensuse-13.2: ## Build and run OpenSuse 13.2
 fedora: ## Build and run latest Fedora
   make run system="$(MAKECMDGOALS)" shell=bash
 
+fedora-38: ## Build and run Fedora 38
+  make run system="$(MAKECMDGOALS)" shell=bash
+
 centos-6: ## Build and run Centos 6
   make run system="$(MAKECMDGOALS)" shell=bash
 

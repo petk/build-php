@@ -10,6 +10,9 @@ RUN apt update && apt install -y \
     pkg-config \
     libsqlite3-dev \
     libxml2-dev \
-    systemtap-sdt-dev
+    systemtap-sdt-dev \
+
+    # For CMake builds.
+    cmake
 
 WORKDIR /opt

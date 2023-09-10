@@ -14,6 +14,9 @@ RUN dnf -y install \
     wget \
     xz \
     systemtap-sdt-devel \
-    sqlite-devel
+    sqlite-devel \
+
+    # For CMake builds
+    cmake
 
 WORKDIR /opt
