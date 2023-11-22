@@ -57,6 +57,9 @@ fedora: ## Build and run latest Fedora
 fedora-38: ## Build and run Fedora 38
   make run system="$(MAKECMDGOALS)" shell=bash
 
+fedora-39: ## Build and run Fedora 39
+  make run system="$(MAKECMDGOALS)" shell=bash
+
 centos-6: ## Build and run Centos 6
   make run system="$(MAKECMDGOALS)" shell=bash
 
