@@ -33,6 +33,9 @@ RUN dnf -y upgrade --refresh && dnf -y install \
     libargon2-devel \
     libtidy-devel \
     libzip-devel \
-    cmake
+    cmake \
+    ccache \
+    lcov \
+    gcovr
 
 WORKDIR /opt

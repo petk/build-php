@@ -21,7 +21,9 @@ RUN apk add --no-cache \
     sqlite-dev \
     libpng-dev \
     freetype-dev \
+    gnu-libiconv-dev \
     vim \
+    cmake \
     && mkdir -p /opt
 
 WORKDIR /opt

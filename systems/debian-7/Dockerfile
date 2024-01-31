@@ -1,4 +1,4 @@
-FROM debian:7
+FROM debian:oldoldstable
 
 ENV DEBIAN_FRONTEND noninteractive
 

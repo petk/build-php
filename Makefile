@@ -45,6 +45,9 @@ ubuntu-14.04:
 ubuntu-16.04: ## Build and run Ubuntu 16.04
   make run system="$(MAKECMDGOALS)" shell=bash
 
+ubuntu-23.10: ## Build and run Ubuntu 23.10
+  make run system="$(MAKECMDGOALS)" shell=bash
+
 ubuntu: ## Build and run latest stable Ubuntu
   make run system="$(MAKECMDGOALS)" shell=bash
 
