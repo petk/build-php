@@ -36,6 +36,9 @@ alpine-3.8: ## Build and run Alpine Linux v3.8
 alpine-3.18: ## Build and run Alpine Linux v3.18
   make run system="$(MAKECMDGOALS)" shell=sh
 
+alpine-3.19: ## Build and run Alpine Linux v3.19
+  make run system="$(MAKECMDGOALS)" shell=sh
+
 alpine-edge: ## Build and run edge Alpine Linux
   make run system="$(MAKECMDGOALS)" shell=sh
 
