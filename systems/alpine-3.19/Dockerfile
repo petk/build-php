@@ -21,6 +21,7 @@ RUN apk add --no-cache \
     sqlite-dev \
     libpng-dev \
     freetype-dev \
+    oniguruma-dev \
     gnu-libiconv-dev \
     vim \
     cmake \

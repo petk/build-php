@@ -1,6 +1,7 @@
 FROM debian:bullseye-slim
 
 RUN apt update && apt install -y \
+    vim \
     gcc \
     g++ \
     autoconf \
@@ -11,7 +12,6 @@ RUN apt update && apt install -y \
     libsqlite3-dev \
     libxml2-dev \
     systemtap-sdt-dev \
-
     # For CMake builds.
     cmake
 

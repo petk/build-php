@@ -17,10 +17,32 @@ RUN apk add --no-cache \
     bison \
     pcre-dev \
     libxml2-dev \
-    libressl-dev \
     sqlite-dev \
     libpng-dev \
     freetype-dev \
+    oniguruma-dev \
+    libapparmor-dev \
+    bzip2-dev \
+    curl-dev \
+    enchant2-dev \
+    libavif-dev \
+    libwebp-dev \
+    jpeg-dev \
+    libxpm-dev \
+    gmp-dev \
+    icu-dev \
+    openldap-dev \
+    unixodbc-dev \
+    freetds-dev \
+    libpq-dev \
+    net-snmp-dev \
+    argon2-dev \
+    tidyhtml-dev \
+    libxslt-dev \
+    libzip-dev \
+    aspell-dev \
+    capstone-dev \
+    libselinux-dev \
     vim \
     && mkdir -p /opt
 
