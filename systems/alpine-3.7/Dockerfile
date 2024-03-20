@@ -23,6 +23,8 @@ RUN apk add --no-cache \
     freetype-dev \
     oniguruma-dev \
     vim \
+    cmake \
+    git \
     && mkdir -p /opt
 
 WORKDIR /opt

@@ -1,8 +1,10 @@
 FROM alpine:edge
 
 RUN apk add --no-cache \
+    git \
     wget \
     autoconf \
+    cmake \
     dpkg-dev \
     dpkg \
     file \

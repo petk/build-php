@@ -25,6 +25,7 @@ RUN apk add --no-cache \
     gnu-libiconv-dev \
     vim \
     cmake \
+    git \
     && mkdir -p /opt
 
 WORKDIR /opt
